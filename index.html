@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Paola Ramirez"/>
+		<meta name="description" content="Profesional en creacion, modifica y mantimiento de sitios web y aplicaciones web. escribo codigo en (HTML, CSS, JavaScript), diseño de interfaces de usuario, y aseguro la funcionalidad y experiencia del usuario." />
+		<meta
+			name="keywords"
+			content="Frontend, Backend, Full Stack"
+		/>
+		<meta name="theme-color" content="#09f" />
+		<!-- Iconos  -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Fuente -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Portafolio</title>
+		<link rel="icon" href="assets/img/pr-favicon.ico" type="image/png" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="module" src="assets/js/main.js"></script>
+		<!-- Integración de EmailJS -->
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init({
+					publicKey: 'serv8gFAuIPj27msfyLQy',
+				});
+			})();
+		</script>
+	</head>
+
+	<body>
+		<!-- Loader -->
+		<div class="loader flex--container">
+			<img src="assets/img/paola_ramirez_logo.jpeg" alt="Loader Image" class="loader__logo" />
+		</div>
+		<header class="header">
+			<nav class="navbar grid--container flex--container">
+				<a class="navbar__logo flex--container" href="#"
+					><i class="bx bxs-registered"></i>Paola Ramirez</a
+				>
+
+				<div id="nav" class="navbar__menu">
+					<a href="#close"
+						><i class="bx bx-x btn__close navbar__icon flex--container"></i
+					></a>
+
+					<ul class="navbar__list flex--container">
+						<li class="navbar__item">
+							<a class="navbar__link active" href="#home">Inicio</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#about">Acerca de Mí</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#skills">Habilidades</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#projects">Portafolio</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#contact">Contacto</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="navbar__toggles flex--container">
+					<div class="navbar__toggle--darkmode flex--container">
+						<input
+							type="checkbox"
+							name="color-scheme"
+							id="darkmode-toggle"
+							class="navbar__toggle--darkmode-input"
+						/>
+						<label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+							<i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+							<i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+						</label>
+					</div>
+					<div class="navbar__toggle--language flex--container">
+						<input
+							type="checkbox"
+							name="language-toggle"
+							id="language-toggle"
+							class="navbar__toggle--language-input"
+						/>
+						<label
+							for="language-toggle"
+							class="navbar__toggle--language-label"
+						></label>
+					</div>
+				</div>
+				<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home" class="home">
+				<i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+				<i
+					class="bx bxl-javascript home__layer home__layer--2"
+					data-speed="5"
+				></i>
+				<i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+				<i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+				<i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+				<i
+					class="bx bxl-tailwind-css home__layer home__layer--6"
+					data-speed="-2"
+				></i>
+				<i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+				<i
+					class="bx bxl-typescript home__layer home__layer--8"
+					data-speed="-2"
+				></i>
+				<i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+				<i
+					class="bx bxl-graphql home__layer home__layer--10"
+					data-speed="-7"
+				></i>
+				<i
+					class="bx bx-code-alt home__layer home__layer--11"
+					data-speed="-5"
+				></i>
+				<div class="home__container grid--container">
+					<div class="home__image">
+						<img
+							src="assets/img/para portada.jpg"
+							alt="profile photo"
+							title="Paola Ramirez"
+						/>
+					</div>
+
+					<ul class="home__social flex--container">
+						<li class="home__social-item">
+							<a class="home__social-link" href="https://www.linkedin.com/feed/" target="_blank"
+								><i class="bx bxl-linkedin"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="https://web.whatsapp.com/" target="_blank"
+								><i class="bx bxl-whatsapp"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="https://github.com/" target="_blank"
+								><i class="bx bxl-github"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="https://outlook.live.com/mail/0/" target="_blank"
+								><i class="bx bx-envelope"></i
+							></a>
+						</li>
+					</ul>
+
+					<div class="home__info">
+						<h1 class="home__title">Hey, soy Paola</h1>
+
+						<p class="home__description">
+							Soy desarrolladora web, apasionada por la tecnología y la
+							programación.
+						</p>
+					</div>
+
+					<div class="home__buttons">
+						<a
+							class="btn"
+							href="#"
+							title="Descargar mi CV"
+							download="my_cv"
+							rel="noreferrer nofollow"
+						>
+							Descargar CV
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="about section">
+				<h2 class="section__title">Acerca de Mí</h2>
+
+				<div class="about__container grid--container">
+					<p class="about__description">
+						"Soy un programador web con experiencia en el desarrollo de sitios web y aplicaciones web, utilizando tecnologías como HTML, CSS, JavaScript, React y Node.js. Tengo capacidad para diseñar, desarrollar, probar y depurar código, garantizando la calidad y funcionalidad de las aplicaciones web. Soy apasionado por la resolución de problemas y la creación de experiencias de usuario innovadoras."
+					</p>
+
+					<div class="about__cards flex--container">
+						<!--Card 1 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/WhatsApp Image 2025-06-04 at 10.46.27 AM (1).jpeg"
+								alt="Laborando como ingeniero"
+								title="Laborando como ingeniero"
+							/>
+						</div>
+						<!--Card 2 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img//WhatsApp Image 2025-06-03 at 2.12.17 PM5.jpeg"
+								alt="Laborando como diseñador"
+								title="Laborando como diseñador"
+							/>
+						</div>
+						<!--Card 3 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/WhatsApp Image 2025-06-04 at 10.46.27 AM 4.jpeg"
+								alt="Trabajando en equipo"
+								title="rabajando en equipo"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills" class="skills section">
+				<h2 class="section__title">Habilidades</h2>
+
+				<div class="skills__container grid--container">
+					<p class="skills__description flex--container">
+						Dominio de lenguajes de programación como HTML, CSS y JavaScript para el front-end y back-end. También son importantes herramientas como sistemas de control de versiones (Git) y la comprensión de bases de datos. Las habilidades blandas incluyen comunicación efectiva, capacidad de resolución de problemas y pensamiento creativo, así como habilidades de trabajo en equipo y liderazgo.
+					</p>
+
+					<div class="skills__wrapper flex--container">
+						<div class="skills__cards flex--container">
+							<!--Card 1 -->
+							<details class="skills__cards-container" name="moreInfo" open>
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-html5 flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">HTML</h3>
+
+									<p class="skills__card-description">
+										la habilidad de estructurar y dar significado a contenido web utilizando etiquetas y elementos HTML. Esto implica la creación de páginas web, desde la organización básica de elementos (párrafos, listas, encabezados) hasta la inserción de imágenes, enlaces y otros contenidos multimedia.
+									</p>
+								</div>
+							</details>
+							<!--Card 2 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-css3 flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">CSS3</h3>
+
+									<p class="skills__card-description">
+										Definir y aplicar estilos a los elementos de una página web. Esto incluye controlar aspectos visuales como colores, fuentes, tamaños, diseño y disposición de los elementos. El CSS permite dar un aspecto visual coherente y profesional a una página web, así como optimizar su funcionamiento. 
+									</p>
+								</div>
+							</details>
+							<!--Card 3 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-javascript flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">Javascript</h3>
+
+									<p class="skills__card-description">
+										Capacidad de utilizar este lenguaje para añadir interactividad, lógica y comportamiento dinámico a sitios web y aplicaciones, desarrollar funciones personalizadas, manejar eventos, interactuar con elementos HTML, y aplicar la lógica de negocio en el lado del cliente. 
+									</p>
+								</div>
+							</details>
+							<!--Card 4 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-react flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">React</h3>
+
+									<p class="skills__card-description">
+										Crear interfaces de usuario interactivas y dinámicas para aplicaciones web y móviles. La habilidad clave  es la construcción de componentes reutilizables, el manejo del estado de la aplicación, y la implementación de la lógica de usuario. También la optimización del rendimiento, pruebas, y la comunicación con otros sistemas. 
+									</p>
+								</div>
+							</details>
+						</div>
+					</div>
+					<div class="skills__tags flex--container">
+						<h3 class="skills__tags-title">Habilidades Blandas</h3>
+						<div class="skills__tags-container flex--container">
+							<span class="skills__tag">Responsable</span>
+							<span class="skills__tag">Trabajo en equipo</span>
+							<span class="skills__tag">Creativo</span>
+							<span class="skills__tag">Puntual</span>
+							<span class="skills__tag">Proactivo</span>
+							<span class="skills__tag">Autodidacta</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+<section id="projects" class="projects section">
+    <h2 class="section__title">Proyectos</h2>
+
+    <div class="projects__container grid--container">
+    <!-- Proyecto 1 -->
+    <div class="projects__project">
+        <div class="projects__inner grid--container">
+        <div class="projects__image">
+            <img
+            src="assets/img/pokeapi.JPG"
+            alt="PokeApi"
+            title="PokeApi"
+            />
+        </div>
+
+        <div class="projects__info">
+            <h3 class="projects__name">Pokédex App</h3>
+            <p class="projects__description">
+            Aplicación desarrollada con <strong>React + Vite</strong> que consume la
+            <strong>PokéAPI</strong> para mostrar información de Pokémon en
+            tarjetas estilo TCG (tipo, habilidades, stats). Diseño responsive con
+            <strong>TailwindCSS</strong>.
+            </p>
+
+            <div class="projects__buttons">
+            <a class="btn projects__button" href="https://poke-appi-project.netlify.app/" target="_blank" rel="noopener noreferrer">
+                VER DEMO
+            </a>
+            <a class="btn projects__button" href="https://github.com/Paolaramirez2021/poke-appi" target="_blank" rel="noopener noreferrer">
+                VER CÓDIGO
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="projects__project">
+        <div class="projects__inner grid--container">
+        <div class="projects__image">
+            <img
+            src="assets/img/clima.JPG"
+            alt="App del clima"
+            title="Aplicación del clima"
+            />
+        </div>
+
+        <div class="projects__info">
+            <h3 class="projects__name">Clima App</h3>
+            <p class="projects__description">
+            Aplicación web que consulta una API de clima para mostrar el
+            pronóstico actual y semanal de cualquier ciudad. Construida con
+            <strong>React, Vite, Axios</strong> y estilos con
+            <strong>TailwindCSS</strong>.
+            </p>
+
+            <div class="projects__buttons">
+            <a class="btn projects__button" href="https://project-clima-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+                VER DEMO
+            </a>
+            <a class="btn projects__button" href="https://github.com/Paolaramirez2021/App-Clima" target="_blank" rel="noopener noreferrer">
+                VER CÓDIGO
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="projects__project">
+        <div class="projects__inner grid--container">
+        <div class="projects__image">
+            <img
+            src="assets/img/rickandmorty.jpg"
+            alt="Rick and Morty App"
+            title="Rick and Morty App"
+            />
+        </div>
+
+        <div class="projects__info">
+            <h3 class="projects__name">Rick and Morty App</h3>
+            <p class="projects__description">
+            Proyecto que consume la <strong>Rick and Morty API</strong> para
+            listar personajes, episodios y ubicaciones. Desarrollado con
+            <strong>React + Vite</strong>, consumo de API REST y diseño modular.
+            </p>
+
+            <div class="projects__buttons">
+            <a class="btn projects__button" href="https://app.netlify.com/projects/rickandmortyproject01/overview" target="_blank" rel="noopener noreferrer">
+                VER DEMO
+            </a>
+                <a class="btn projects__button" href="https://github.com/Paolaramirez2021/rickandMorty" target="_blank" rel="noopener noreferrer">
+                VER CÓDIGO
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+			<section id="contact" class="contact section">
+				<h2 class="section__title">Contacto</h2>
+
+				<div class="contact__container grid--container">
+					<div class="contact__info">
+						<h3 class="contact__info-title">Información de contacto</h3>
+						<p class="contact__info-description">
+							calle 95 71-75 Bogota - Colombia.
+						</p>
+
+						<address class="contact__info-data">
+							<div class="contact__info-item">
+								<i class="bx bxl-whatsapp"></i>
+
+								<span class="contact__info-number">
+									<a
+										href="https://web.whatsapp.com//"
+										target="_blank"
+										rel="noreferrer nofollow"
+										>Enviar mensaje a WhatsApp</a
+									>
+								</span>
+							</div>
+
+							<div class="contact__info-item">
+								<i class="bx bx-phone"></i>
+
+								<span class="contact__info-number">
+									<a
+										href="tel:+57 318 393 0368 -- +1 856 516 5705"
+										target="_blank"
+										rel="noreferrer nofollow"
+									>
+										+1 856-516-5705
+									</a>
+								</span>
+							</div>
+
+							<div class="contact__info-item">
+								<i class="bx bxs-envelope"></i>
+
+								<span class="contact__info-mail">
+									<a
+										id="mail"
+										href="https://outlook.live.com/mail/0/"
+										target="_blank"
+										rel="noreferrer nofollow"
+									>
+										paola.ramirez112021@outlook.com
+									</a>
+								</span>
+							</div>
+
+							<div class="contact__info-item">
+								<i class="bx bx-map"></i>
+
+								<span class="contact__info-map"> Bogota Colombia. </span>
+							</div>
+						</address>
+					</div>
+					<div class="contact__form">
+						<h3 class="contact__form-title">Enviar mensaje</h3>
+						<form id="form" class="contact__form-container">
+							<div class="contact__form-group">
+								<label for="name" class="contact__form-label">Nombre</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									class="contact__form-input"
+								/>
+							</div>
+
+							<div class="contact__form-group">
+								<label for="email" class="contact__form-label">Correo</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="contact__form-input"
+								/>
+							</div>
+
+							<div class="contact__form-group">
+								<label for="subject" class="contact__form-label">Asunto</label>
+								<input
+									type="text"
+									id="subject"
+									name="subject"
+									class="contact__form-input"
+								/>
+							</div>
+
+							<div class="contact__form-group">
+								<label for="message" class="contact__form-label">Mensaje</label>
+								<textarea
+									id="message"
+									name="message"
+									cols="30"
+									rows="10"
+									class="contact__form-input"
+								></textarea>
+							</div>
+							<dialog class="contact__form-modal" id="modal">
+								Formulario enviado con éxito!
+								<button type="reset" id="btn_close-modal">Cerrar</button>
+							</dialog>
+
+							<button type="submit" class="btn contact__form-button">
+								Enviar
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer section">
+			<div class="footer__container grid--container">
+				<div class="footer__info">
+					<h3 class="footer__title">Paola Ramirez</h3>
+					<p class="footer__description">
+						Soy desarrolladora web, apasionada por la tecnología y la
+						programación.
+					</p>
+				</div>
+
+				<div class="footer__social">
+					<h3 class="footer__title">Redes Sociales</h3>
+
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="https://www.facebook.com/JPAULA.RODRIGUEZ"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-facebook"></i
+							></a>
+						</li>
+
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="https://www.instagram.com/jpaula.rodriguez/"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-instagram"></i
+							></a>
+						</li>
+
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="#"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-twitter"></i
+							></a>
+						</li>
+
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="https://www.linkedin.com/in/paola-ramirez-604663a7/"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-linkedin"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<p class="footer__copy"><span></span> Todos los derechos reservados</p>
+		</footer>
+	</body>
+</html>
